@@ -1,4 +1,4 @@
-# Comunity Training
+# Community Training
 
 Respositorio para los materiales de los entrenamientos que se realizarán en los
 meses de octubre/noviembre con el apoyo de las diversas comunidades de software
