@@ -1,0 +1,4 @@
+# Allow crawling of all content
+User-agent: *
+Disallow:
+Sitemap: http://hackspaceperu.github.com/Community-Training/sitemap.xml
