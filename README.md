@@ -32,8 +32,11 @@ del país.
 * ~~Elección de un dominio kawaii para el entrenamiento.~~ (Salió larga la wea entrenamientodecomunidades.com :v)
 * ~~Confirmación de las comunidades participantes.~~ (4 Comunidades pe)
 * Temario de los entrenamientos.
-** ~~Python~~ (done)
-** ~~Arduino~~ (done)
+   * ~~Python~~ (done)
+   * ~~Arduino~~ (done)
+   * Frontend
+   * Android
+   * Raspberry Pi
 * Definición de los temas concretos a tratar en cada taller.
 * Definición del programa.
 * Algo más? Ideas por favor ...
