@@ -12,6 +12,7 @@ del país.
 * HackSpace: Arduino.
 * Python Perú: Python.
 * Mozilla Perú: Frontend.
+* CSL UNI: Raspberry Pi.
 
 ## Actividades
 
