@@ -259,7 +259,7 @@ a img{
     margin-right: 16px;
   }
 
-  .ct-more-button {
+  .ct-workshop-button {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
         -ms-flex-order: 3;
@@ -303,7 +303,7 @@ a img{
 
 .ct-community-training-section {
   position: relative;
-  height: 90vh;
+  height: 85vh;
   width: auto;
   background-color: #f3f3f3;
   background: url('../img/main_banner.jpg') center 30% no-repeat;
@@ -437,7 +437,7 @@ a img{
 
 .ct-motivation-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('../img/shield_256.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -507,19 +507,19 @@ a img{
   }
 
 .ct-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
+  background: url('../img/shield_256.png') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
 
-.ct-more-section {
+.ct-workshop-section {
   padding: 80px 0;
   max-width: 1044px;
   margin-left: auto;
   margin-right: auto;
 }
 
-  .ct-more-section .ct-section-title {
+  .ct-workshop-section .ct-section-title {
     margin-left: 12px;
     padding-bottom: 24px;
   }
@@ -622,7 +622,7 @@ a img{
     opacity: 0;
   }
 
-  .ct-more-button {
+  .ct-workshop-button {
     display: none;
   }
 
