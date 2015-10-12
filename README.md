@@ -1,6 +1,6 @@
-# [![Entrenamiento de comunidades](./logo_tiny.png)](./static/img/logo_large.png) Entrenamiento de comunidades
+# [![Entrenamiento de comunidades](./static/img/logo_tiny.png)](./static/img/logo_large.png) Entrenamiento de comunidades
 
-[![Join the chat at https://gitter.im/HackSpacePeru/Community-Training](./gitter_badge.png)](https://gitter.im/HackSpacePeru/Community-Training?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/HackSpacePeru/Community-Training](./static/img/gitter_badge.png)](https://gitter.im/HackSpacePeru/Community-Training?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Repositorio para los materiales de los entrenamientos que se realizarán en los
 meses de octubre/noviembre con el apoyo de las diversas comunidades de software

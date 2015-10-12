@@ -1,0 +1,23 @@
+CONF_NAME="community-training"
+BASE_DIRECTORY="$(pwd)"
+ERROR_LOG_FILE="error_$(date +%Y%m%dT%H%M%S).log"
+ACCESS_LOG_FILE="access_$(date +%Y%m%dT%H%M%S).log"
+
+if [ ! -d "$BASE_DIRECTORY/logs" ]; then
+    mkdir $BASE_DIRECTORY/logs
+fi
+
+touch $BASE_DIRECTORY/logs/$ERROR_LOG_FILE
+touch $BASE_DIRECTORY/logs/$ACCESS_LOG_FILE
+
+cp $BASE_DIRECTORY/settings/nginx.conf $BASE_DIRECTORY/settings/$CONF_NAME.conf
+sed -i -e 's|BASE_DIRECTORY|'$BASE_DIRECTORY'|g' $BASE_DIRECTORY/settings/$CONF_NAME.conf
+sed -i -e 's|ERROR_LOG_FILE|'$ERROR_LOG_FILE'|g' $BASE_DIRECTORY/settings/$CONF_NAME.conf
+sed -i -e 's|ACCESS_LOG_FILE|'$ACCESS_LOG_FILE'|g' $BASE_DIRECTORY/settings/$CONF_NAME.conf
+
+if [ -f "/etc/nginx/sites-enabled/$CONF_NAME.conf" ]; then
+    sudo rm /etc/nginx/sites-enabled/$CONF_NAME.conf
+fi
+
+sudo mv $BASE_DIRECTORY/settings/$CONF_NAME.conf /etc/nginx/sites-enabled/
+sudo service nginx reload
