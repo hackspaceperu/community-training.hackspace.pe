@@ -167,7 +167,7 @@ a img{
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
+  background: #761422 !important;
   color: black !important;
 }
 
@@ -178,6 +178,11 @@ a img{
 
 .ct-logo-image {
   height: 28px;
+  width: auto;
+}
+
+.ct-logo-image.ct-logo-shield{
+  height: auto;
   width: 140px;
 }
 
@@ -241,7 +246,8 @@ a img{
   }
 
     .ct-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
+      border-bottom: 4px solid #761422;
+      color: white;
     }
 
   .ct-search-box {
@@ -280,6 +286,10 @@ a img{
     color: #8bc34a;
   }
 
+  .ct-drawer span.mdl-navigation__link:hover {
+    color: #761422!important;
+  }
+
   .ct-drawer .mdl-layout-title {
     position: relative;
     background: #6ab344;
@@ -291,12 +301,12 @@ a img{
       bottom: 16px;
     }
 
-.ct-be-together-section {
+.ct-community-training-section {
   position: relative;
-  height: 800px;
+  height: 90vh;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
+  background: url('../img/main_banner.jpg') center 30% no-repeat;
   background-size: cover;
 }
 
@@ -309,23 +319,27 @@ a img{
 
 .ct-slogan {
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 12vh;
 }
 
 .ct-sub-slogan {
   font-size: 21px;
-  padding-top: 24px;
+  padding-top: 6vh;
 }
 
 .ct-create-character {
   font-size: 21px;
-  padding-top: 400px;
+  padding-top: 25vh;
 }
 
   .ct-create-character a {
     text-decoration: none;
     color: #767777;
     font-weight: 300;
+  }
+
+  .ct-create-character img {
+    height: 30px;
   }
 
 .ct-screen-section {
@@ -355,13 +369,13 @@ a img{
   text-decoration: none;
 }
 
-.ct-wear {
+.ct-motivation {
   display: inline-block;
   width: 160px;
   margin-right: 32px;
 }
 
-  .ct-wear .ct-screen-image {
+  .ct-motivation .ct-screen-image {
     width: 40%;
     z-index: 1;
   }
@@ -396,13 +410,13 @@ a img{
   }
 
 
-.ct-tv {
+.ct-community {
   display: inline-block;
   width: 300px;
   margin-right: 80px;
 }
 
-  .ct-tv .ct-screen-image {
+  .ct-community .ct-screen-image {
     width: 100%;
     z-index: 1;
   }
@@ -421,14 +435,14 @@ a img{
   }
 
 
-.ct-wear-section {
+.ct-motivation-section {
   position: relative;
   background: url('images/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
 
-.ct-wear-band {
+.ct-motivation-band {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -436,7 +450,7 @@ a img{
   background-color: #37474f;
 }
 
-.ct-wear-band-text {
+.ct-motivation-band-text {
   max-width: 800px;
   margin-left: 25%;
   padding: 24px;
@@ -444,7 +458,7 @@ a img{
   color: white;
 }
 
-  .ct-wear-band-text p {
+  .ct-motivation-band-text p {
     padding-top: 8px;
   }
 
@@ -620,7 +634,7 @@ a img{
     width: 100%;
   }
 
-  .ct-be-together-section {
+  .ct-community-training-section {
     height: 350px;
   }
 
@@ -649,7 +663,7 @@ a img{
     display: none;
   }
 
-  .ct-wear-band-text {
+  .ct-motivation-band-text {
     margin-left: 0;
     padding: 16px;
   }
@@ -659,5 +673,24 @@ a img{
   }
 }
 
+.ct-bg-blue{
+  background-color: #0d1c27;
+}
+
+.ct-text-blue{
+  color: #0d1c27!important;
+}
+
+.ct-bg-red{
+  background-color: #761422;
+}
+
+.ct-text-red{
+  color: #761422!important;
+}
+
+.ct-top-border-red{
+  border-top: 5px solid #761422;
+}
 
 

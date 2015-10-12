@@ -175,143 +175,185 @@
   </head>
 
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="ct-header mdl-layout__header mdl-layout__header--waterfall">
+    <div class="mdl-layout ct-top-border-red mdl-js-layout mdl-layout--fixed-header">
+      <div class="ct-header ct-bg-blue mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="ct-title mdl-layout-title">
-            <img class="ct-logo-image" src="images/ct-logo.png">
+            <img class="ct-logo-image" src="/static/img/text_logo.png">
           </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="ct-header-spacer mdl-layout-spacer"></div>
-          <div class="ct-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field" />
-            </div>
-          </div>
-          <!-- Navigation -->
           <div class="ct-navigation-container">
             <nav class="ct-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Android</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Arduino</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Python</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Frontend</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Raspberry Pi</a>
             </nav>
           </div>
-          <button class="ct-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
-          </ul>
           <span class="ct-mobile-title mdl-layout-title">
-            <img class="ct-logo-image" src="images/ct-logo.png">
+            <img class="ct-logo-image" src="/static/img/text_logo.png">
           </span>
         </div>
       </div>
 
       <div class="ct-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="ct-logo-image" src="images/ct-logo-white.png">
+        <span class="mdl-color--white mdl-layout-title">
+          <img class="ct-logo-image ct-logo-shield" src="/static/img/shield_256.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
-          <div class="ct-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
-          <div class="ct-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
-          <div class="ct-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
+            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Talleres</span>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Android</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Arduino</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Frontend</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Python</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Raspberry Pi</a>
+            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Soporte</span>
+              <a class="mdl-navigation__link" href="">Gitter</a>
+              <a class="mdl-navigation__link" href="">Wiki</a>
+            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Comunidades</span>
+              <a class="mdl-navigation__link" href="">GDG Open</a>
+              <a class="mdl-navigation__link" href="">CSL UNI</a>
+              <a class="mdl-navigation__link" href="">HackSpace</a>
+              <a class="mdl-navigation__link" href="">Mozilla Perú</a>
+              <a class="mdl-navigation__link" href="">Python Perú</a>
         </nav>
       </div>
 
       <div class="ct-content mdl-layout__content">
         <a name="top"></a>
-        <div class="ct-be-together-section mdl-typography--text-center">
-          <div class="ct-font ct-slogan">be together. not the same.</div>
-          <div class="ct-font ct-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
-          <div class="ct-font ct-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
+        <div class="ct-community-training-section mdl-typography--text-center">
+          <div class="ct-font mdl-color-text--white ct-slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="ct-font mdl-color-text--white ct-sub-slogan">Cras nec congue dui, vitae faucibus diam. Pellentesque interdum quam a rhoncus pulvinar.</div>
+          <div class="ct-font mdl-color-text--white ct-create-character">
+            <a href="" class="mdl-color-text--white"><img src="/static/img/flame_64.png"><br>Pellentesque interdum quam a rhoncus pulvinar.</a>
           </div>
-
-          <a href="#screens">
+          <a href="#workshops">
             <button class="ct-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
+              <i class="material-icons mdl-color-text--white">expand_more</i>
             </button>
           </a>
         </div>
+
+        <div class="ct-more-section">
+          <a name="workshops"></a>
+          <div class="ct-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+          <div class="ct-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="/static/img/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get going on Android</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Make the switch
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="/static/img/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   androidify.com
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="/static/img/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download now
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="/static/img/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Find apps
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="ct-screen-section mdl-typography--text-center">
           <a name="screens"></a>
           <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
           <div class="ct-screens">
-            <div class="ct-wear ct-screen">
+            <div class="ct-community ct-screen">
               <a class="ct-image-link" href="">
-                <img class="ct-screen-image" src="images/wear-silver-on.png">
-                <img class="ct-screen-image" src="images/wear-black-on.png">
+                <img class="ct-screen-image" src="/static/img/wear-black-on.png">
               </a>
-              <a class="ct-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+              <a class="ct-link ct-text-blue mdl-typography--font-regular mdl-typography--text-uppercase" href="">Google Developer Group</a>
             </div>
-            <div class="ct-phone ct-screen">
+            <div class="ct-community ct-screen">
               <a class="ct-image-link" href="">
-                <img class="ct-screen-image" src="images/nexus6-on.jpg">
+                <img class="ct-screen-image" src="/static/img/nexus6-on.jpg">
               </a>
-              <a class="ct-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+              <a class="ct-link ct-text-blue mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
             </div>
-            <div class="ct-tablet ct-screen">
+            <div class="ct-community ct-screen">
               <a class="ct-image-link" href="">
-                <img class="ct-screen-image" src="images/nexus9-on.jpg">
+                <img class="ct-screen-image" src="/static/img/nexus9-on.jpg">
               </a>
-              <a class="ct-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="ct-link ct-text-blue mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
             </div>
-            <div class="ct-tv ct-screen">
+            <div class="ct-community ct-screen">
               <a class="ct-image-link" href="">
-                <img class="ct-screen-image" src="images/tv-on.jpg">
+                <img class="ct-screen-image" src="/static/img/tv-on.jpg">
               </a>
-              <a class="ct-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
-            </div>
-            <div class="ct-auto ct-screen">
-              <a class="ct-image-link" href="">
-                <img class="ct-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="ct-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+              <a class="ct-link ct-text-blue mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
             </div>
           </div>
         </div>
-        <div class="ct-wear-section">
-          <div class="ct-wear-band">
-            <div class="ct-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+        <div class="ct-motivation-section">
+          <div class="ct-motivation-band">
+            <div class="ct-motivation-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">Suspendisse sed lacinia enim</div>
               <p class="mdl-typography--headline mdl-typography--font-thin">
-                Android works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
+                Maecenas lobortis, ligula id pellentesque sollicitudin, augue ante lobortis ex,
+                at lacinia augue dolor at velit.
               </p>
               <p>
                 <a class="mdl-typography--font-regular mdl-typography--text-uppercase ct-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                  Vestibulum accumsan, diam nec lobortis sagittis, odio orci gravida metus <i class="material-icons">chevron_right</i>
                 </a>
               </p>
             </div>
@@ -333,7 +375,7 @@
           <div class="ct-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
+                <img src="/static/img/more-from-1.png">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Get going on Android</h4>
@@ -351,7 +393,7 @@
 
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
+                <img src="/static/img/more-from-4.png">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Create your own Android character</h4>
@@ -369,7 +411,7 @@
 
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
+                <img src="/static/img/more-from-2.png">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
@@ -387,7 +429,7 @@
 
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
+                <img src="/static/img/more-from-3.png">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Millions to choose from</h4>
