@@ -86,9 +86,6 @@
       }
 
       .ct-layout .navbar-fixed nav{
-        -webkit-box-sizing: content-box;
-           -moz-box-sizing: content-box;
-                box-sizing: content-box;
         border-top: 5px solid #761422;
         padding: 0 15px;
         line-height: 59px;

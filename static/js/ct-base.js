@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
     clearInterval(loadingInterval);
-    p.style.width = bw + "px";
+    p.style.width = "100%";
     if( bc.contains("not-loaded") ){
         setTimeout( function(){
             bc.add("loaded"); bc.remove("not-loaded");
