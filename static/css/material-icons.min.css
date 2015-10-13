@@ -11,19 +11,39 @@
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: inherit;
   display: inline-block;
-  width: auto;
   height: auto;
-  line-height: inherit;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
+  width: auto;
+  direction: ltr;
+  font-family: 'Material Icons';
   font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+  font-size: inherit;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: inherit;
+  speak: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  transform: translate(0, 0);
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
 }
+
+// Rules for sizing the icon.
+.material-icons.icon-size-18 { font-size: 18px; }
+.material-icons.icon-size-24 { font-size: 24px; }
+.material-icons.icon-size-36 { font-size: 36px; }
+.material-icons.icon-size-48 { font-size: 48px; }
+
+// Rules for using icons as black on a light background.
+.material-icons.icon-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.icon-dark.icon-inactive { color: rgba(0, 0, 0, 0.26); }
+
+// Rules for using icons as white on a dark background.
+.material-icons.icon-light { color: rgba(255, 255, 255, 1); }
+.material-icons.icon-light.icon-inactive { color: rgba(255, 255, 255, 0.3); }

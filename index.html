@@ -26,411 +26,154 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
 
-    <!-- script>
-      ;(function() {
-        "use strict";
-
-        function addEvent(e, ev, fn) {
-          (e.addEventListener)?e.addEventListener(ev, fn, false):e.attachEvent("on" + ev, function() {return(fn.call(e, window.ev));});
-        }
-
-        var logs = [];
-        var eventSet = false;
-        var loaded = false;
-
-        function log(str) {
-          function output(str) {
-            var o = document.getElementById("log");
-            var div = document.createElement("div");
-            div.appendChild(document.createTextNode(str));
-            o.appendChild(div);
-          }
-
-          (loaded)?output(str):logs.push(str);
-
-          if (!eventSet) {
-            eventSet = true;
-            addEvent(window, "load", function() {
-              loaded = true;
-              for (var i = 0; i < logs.length; i++) {
-                output(logs[i]);
-              }
-              logs = [];
-            });
-          }
-        }
-
-        (function() {
-            var readyList = [];
-            var readyFired = false;
-            var readyEventHandlersInstalled = false;
-
-            // call this when the document is ready
-            // this function protects itself against being called more than once
-            function ready() {
-                if (!readyFired) {
-                    log("ready called");
-                    // this must be set to true before we start calling callbacks
-                    readyFired = true;
-                    for (var i = 0; i < readyList.length; i++) {
-                        // if a callback here happens to add new ready handlers,
-                        // the docReady() function will see that it already fired
-                        // and will schedule the callback to run right after
-                        // this event loop finishes so all handlers will still execute
-                        // in order and no new ones will be added to the readyList
-                        // while we are processing the list
-                        readyList[i].fn.call(window, readyList[i].ctx);
-                    }
-                    // allow any closures held by these functions to free
-                    readyList = [];
-                }
-            }
-
-            function readyStateChange() {
-            if ( document.readyState === "complete" ) {
-                    log("readyState === 'complete'");
-                    ready();
-                }
-            }
-
-            function readyLoad() {
-                log("window load fired");
-                if (!readyFired) {
-                    log("window load firing ready");
-                }
-                ready();
-            }
-
-            // the one public interface
-            // docReady(fn, context);
-            // the context argument is optional - if present, it will be passed
-            // as an argument to the callback
-            window.docReady = function(callback, context) {
-                // if ready has already fired, then just schedule the callback
-                // to fire asynchronously, but right away
-                if (readyFired) {
-                    setTimeout(function() {
-                        callback(context);
-                    }, 1);
-                    return;
-                } else {
-                    // add the function and context to the list
-                    readyList.push({fn: callback, ctx: context});
-                }
-                // if document already ready to go, schedule the ready function to run
-                if (document.readyState === "complete") {
-                    setTimeout(ready, 1);
-                } else if (!readyEventHandlersInstalled) {
-                    // otherwise if we don't have event handlers installed, install them
-                    if (document.addEventListener) {
-                        // first choice is DOMContentLoaded event
-                        document.addEventListener("DOMContentLoaded", ready, false);
-                        // backup is window load event
-                        window.addEventListener("load", readyLoad, false);
-                    } else {
-                        // must be IE
-                        document.attachEvent("onreadystatechange", readyStateChange);
-                        window.attachEvent("onload", readyLoad);
-                    }
-                    readyEventHandlersInstalled = true;
-                }
-            }
-        })();
-
-        //test basic functionality
-        // docReady(function() {
-        //     document.body.appendChild(document.createTextNode("Hello Text 1"));
-        //     // test adding new docReady handler from a docReady callback
-        //     docReady(function() {
-        //         document.body.appendChild(document.createTextNode(", Hello Text 2"));
-        //     });
-        // });
-
-        // test finding an ID in the document
-        // docReady(function() {
-        //     document.getElementById("test").innerHTML = "Hello ID";
-        // });
-
-        // test calling docReady after window load and
-        // docReady has already fired
-        //addEvent(window, "load", function() {
-        //    setTimeout(function() {
-        //    document.body.appendChild(document.createTextNode(", Hello Text 2.5"));
-        //        docReady(function(arg) {
-        //            document.body.appendChild(document.createTextNode(arg));
-        //        }, ", Hello Text 3");
-        //    }, 1);
-        //});
-      })();
-    </script -->
-
     <script type="text/javascript" charset="utf-8" src="/static/js/modernizr.min.js"></script>
 
-    <link rel="stylesheet" href="/static/css/normalize.css">
-    <link rel="stylesheet" href="/static/css/material-icons.min.css">
     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/material.min.css">
-    <link rel="stylesheet" href="/static/css/roboto.min.css">
+    <link rel="stylesheet" href="/static/css/materialize.min.css">
+    <link rel="stylesheet" href="/static/css/material-icons.min.css">
     <link rel="stylesheet" href="/static/css/ct-base.css">
   </head>
 
-  <body>
-    <div class="mdl-layout ct-top-border-red mdl-js-layout mdl-layout--fixed-header">
-      <div class="ct-header ct-bg-blue mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="ct-title mdl-layout-title">
-            <img class="ct-logo-image" src="/static/img/text_logo.png">
-          </span>
-          <div class="ct-header-spacer mdl-layout-spacer"></div>
-          <div class="ct-navigation-container">
-            <nav class="ct-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Android</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Arduino</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Python</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Frontend</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Raspberry Pi</a>
-            </nav>
-          </div>
-          <span class="ct-mobile-title mdl-layout-title">
-            <img class="ct-logo-image" src="/static/img/text_logo.png">
-          </span>
-        </div>
+  <body class="not-loaded ct-home">
+    <div id="ct-page-loader" class="ct-preloader">
+      <div class="ct-preloader--overlay">
       </div>
-
-      <div class="ct-drawer mdl-layout__drawer">
-        <span class="mdl-color--white mdl-layout-title">
-          <img class="ct-logo-image ct-logo-shield" src="/static/img/shield_256.png">
-        </span>
-        <nav class="mdl-navigation">
-            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Talleres</span>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Android</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Arduino</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Frontend</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Python</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Raspberry Pi</a>
-            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Soporte</span>
-              <a class="mdl-navigation__link" href="">Gitter</a>
-              <a class="mdl-navigation__link" href="">Wiki</a>
-            <span class="ct-bg-blue ct-top-border-red mdl-color-text--white mdl-navigation__link" href="">Comunidades</span>
-              <a class="mdl-navigation__link" href="">GDG Open</a>
-              <a class="mdl-navigation__link" href="">CSL UNI</a>
-              <a class="mdl-navigation__link" href="">HackSpace</a>
-              <a class="mdl-navigation__link" href="">Mozilla Perú</a>
-              <a class="mdl-navigation__link" href="">Python Perú</a>
-        </nav>
-      </div>
-
-      <div class="ct-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="ct-community-training-section mdl-typography--text-center">
-          <div class="ct-font mdl-color-text--white ct-slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          <div class="ct-font mdl-color-text--white ct-sub-slogan">Cras nec congue dui, vitae faucibus diam. Pellentesque interdum quam a rhoncus pulvinar.</div>
-          <div class="ct-font mdl-color-text--white ct-create-character">
-            <a href="" class="mdl-color-text--white"><img src="/static/img/flame_64.png"><br>Pellentesque interdum quam a rhoncus pulvinar.</a>
-          </div>
-          <a href="#workshops">
-            <button class="ct-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons mdl-color-text--white">expand_more</i>
-            </button>
-          </a>
+      <div class="ct-preloader--progres-bar">
+        <div class="ct-preloader--progres-indicator">
         </div>
-
-        <div class="ct-workshop-section">
-          <a name="workshops"></a>
-          <div class="ct-section-title mdl-typography--display-1-color-contrast">Lorem Ipsum</div>
-          <div class="ct-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="/static/img/flame_256.png">
-              </div>
-              <div class="mdl-card__title">
-                <h4 class="mdl-card__title-text">
-                Lorem ipsum dolor sit amet
-                </h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">
-                Consectetur adipiscing elit. Ut iaculis neque sit amet quam iaculis pharetra non nec felis.
-                </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  Lorem ipsum <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="/static/img/flame_256.png">
-              </div>
-              <div class="mdl-card__title">
-                <h4 class="mdl-card__title-text">
-                Lorem ipsum dolor sit amet
-                </h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">
-                Consectetur adipiscing elit. Ut iaculis neque sit amet quam iaculis pharetra non nec felis.
-                </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  Lorem ipsum <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="/static/img/flame_256.png">
-              </div>
-              <div class="mdl-card__title">
-                <h4 class="mdl-card__title-text">
-                Lorem ipsum dolor sit amet
-                </h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">
-                Consectetur adipiscing elit. Ut iaculis neque sit amet quam iaculis pharetra non nec felis.
-                </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  Lorem ipsum <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="/static/img/flame_256.png">
-              </div>
-              <div class="mdl-card__title">
-                <h4 class="mdl-card__title-text">
-                Lorem ipsum dolor sit amet
-                </h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">
-                Consectetur adipiscing elit. Ut iaculis neque sit amet quam iaculis pharetra non nec felis.
-                </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  Lorem ipsum <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="/static/img/flame_256.png">
-              </div>
-              <div class="mdl-card__title">
-                <h4 class="mdl-card__title-text">
-                Lorem ipsum dolor sit amet
-                </h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">
-                Consectetur adipiscing elit. Ut iaculis neque sit amet quam iaculis pharetra non nec felis.
-                </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="ct-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                  Lorem ipsum <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ct-motivation-section">
-          <div class="ct-motivation-band">
-            <div class="ct-motivation-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">Suspendisse sed lacinia enim</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                Maecenas lobortis, ligula id pellentesque sollicitudin, augue ante lobortis ex,
-                at lacinia augue dolor at velit.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase ct-alt-link" href="">
-                  Vestibulum accumsan, diam nec lobortis sagittis, odio orci gravida metus <i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="ct-customized-section">
-          <div class="ct-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="ct-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="ct-customized-section-image"></div>
-        </div>
-
-        <footer class="ct-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Back to Top
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="ct-link ct-link-menu mdl-typography--font-light" id="version-dropdown">
-              Talleres
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">Android</li>
-              <li class="mdl-menu__item">Arduino</li>
-              <li class="mdl-menu__item">Python</li>
-              <li class="mdl-menu__item">Frontend</li>
-              <li class="mdl-menu__item">Raspberry Pi</li>
-            </ul>
-            <a class="ct-link ct-link-menu mdl-typography--font-light" id="developers-dropdown">
-              For Developers
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">GDG Open</li>
-              <li class="mdl-menu__item">CSL UNI</li>
-              <li class="mdl-menu__item">HackSpace</li>
-              <li class="mdl-menu__item">Mozilla Perú</li>
-              <li class="mdl-menu__item">Python Perú</li>
-            </ul>
-            <a class="ct-link mdl-typography--font-light" href="">Resursos</a>
-            <a class="ct-link mdl-typography--font-light" href="">Políticas de Privacidad</a>
-          </div>
-
-        </footer>
       </div>
     </div>
 
+    <div class="ct-layout">
+      <!-- PAGE HEADER -->
+      <header id="header" class="">
+        <!-- Dropdown Structures -->
+        <ul id="workshops" class="dropdown-content">
+          <li><a href="taller/android"     >Android     </a></li>
+          <li><a href="taller/arduino"     >Arduino     </a></li>
+          <li><a href="taller/python"      >Python      </a></li>
+          <li><a href="taller/frontend"    >Frontend    </a></li>
+          <li><a href="taller/raspberry_pi">Raspberry Pi</a></li>
+        </ul>
 
+        <ul id="support" class="dropdown-content">
+          <li><a href="support/gitter">Gitter</a></li>
+          <li><a href="support/github">Github</a></li>
+          <li><a href="support/wiki  ">Wiki  </a></li>
+        </ul>
 
+        <!-- Navigation bar -->
+        <nav class="ct-blue">
+          <div class="navbar-fixed">
+            <a href="/" class="brand-logo">
+              <img src="/static/img/flame_128.png" alt="">
+              <img src="/static/img/text_logo.png" alt="">
+            </a>
 
-    <script type="text/javascript" charset="utf-8" src="static/js/material.min.js"></script>
+            <a href="#" data-activates="ct-mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a class="dropdown-button" href="" data-activates="workshops">
+                  Talleres <i class="material-icons icon-size-24 right">arrow_drop_down</i>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-button" href="" data-activates="support">
+                  Soporte <i class="material-icons icon-size-24 right">arrow_drop_down</i>
+                </a>
+              </li>
+
+              <li class="registration">
+                <a href="/inscripciones" class="btn ct-red hoverable">Inscripciones</a>
+              </li>
+            </ul>
+
+            <ul class="side-nav" id="ct-mobile-nav">
+              <li class="ct-logo"><a href="/"></a></li>
+              <li class="registration">
+                <a href="/inscripciones" class="btn ct-red white-text hoverable">Inscripciones</a>
+              </li>
+              <li class="divider"></li>
+              <li class="item-title"><span class="ct-red-text">Talleres<i class="material-icons icon-size-36 right">arrow_drop_down</i></span></li>
+              <li><a class="ct-blue-text" href="taller/android"     ><strong>Android     </strong></a></li>
+              <li><a class="ct-blue-text" href="taller/arduino"     ><strong>Arduino     </strong></a></li>
+              <li><a class="ct-blue-text" href="taller/python"      ><strong>Python      </strong></a></li>
+              <li><a class="ct-blue-text" href="taller/frontend"    ><strong>Frontend    </strong></a></li>
+              <li><a class="ct-blue-text" href="taller/raspberry_pi"><strong>Raspberry Pi</strong></a></li>
+
+              <li class="divider"></li>
+              <li class="item-title"><span class="ct-red-text">Soporte<i class="material-icons icon-size-36 right">arrow_drop_down</i></span></li>
+              <li><a class="ct-blue-text" href="support/gitter"><strong>Gitter</strong></a></li>
+              <li><a class="ct-blue-text" href="support/github"><strong>Github</strong></a></li>
+              <li><a class="ct-blue-text" href="support/wiki  "><strong>Wiki  </strong></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="ct-sections">
+          <section>
+            <div id="ct-welcome">
+              <div id="ct-welcome-message" class="container center-align">
+                <h1 class="ct-blue-text light">Bienvenido al</h1>
+              </div>
+            </div>
+            <div id="ct-slogan" class="container center-align">
+              <h2 class="ct-blue-text light">Las Comunidades de Software reunidas para mostrarte lo mejor del mundo del desarrollo de software e introducirte en él.</h2>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col s8 offset-s2 m4 offset-m4 l4 offset-l4 center-align">
+                  <a href="/inscripciones" class="btn btn-large ct-red registration">
+                    Inscríbete
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row center-align">
+                <div class="col s8 offset-s2 m4 offset-m2 l4">
+                  <div class="ct-community-card card hoverable">
+                    <a class="card-image waves-effect waves-block waves-light" style="background-image: url('/static/img/logo_CSLUNI.png');">
+                    </a>
+                  </div>
+                </div>
+                <div class="col s8 offset-s2 m4 l4">
+                  <div class="ct-community-card card hoverable">
+                    <a class="card-image waves-effect waves-block waves-light" style="background-image: url('/static/img/logo_gdg_lima.png');">
+                    </a>
+                  </div>
+                </div>
+                <div class="col s8 offset-s2 m4 offset-m2 l4">
+                  <div class="ct-community-card card hoverable">
+                    <a class="card-image waves-effect waves-block waves-light" style="background-image: url('/static/img/logo_hackspace.png');">
+                    </a>
+                  </div>
+                </div>
+                <div class="col s8 offset-s2 m4 l4 offset-l2">
+                  <div class="ct-community-card card hoverable">
+                    <a class="card-image waves-effect waves-block waves-light" style="background-image: url('/static/img/logo_mozilla_peru.png');">
+                    </a>
+                  </div>
+                </div>
+                <div class="col s8 offset-s2 m4 offset-m4 l4">
+                  <div class="ct-community-card card hoverable">
+                    <a class="card-image waves-effect waves-block waves-light" style="background-image: url('/static/img/logo_python_peru.png');">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+
+          </section>
+        </div>
+      </main>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="static/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="static/js/materialize.js"></script>
     <script type="text/javascript" charset="utf-8" src="static/js/ct-base.js"></script>
     <script>
       ;(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
