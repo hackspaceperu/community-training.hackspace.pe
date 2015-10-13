@@ -23,7 +23,7 @@ $(document).ready(function(){
         })
     })
 
-    $('.dropdown-button').dropdown({
+    $('nav .dropdown-button').lenght && $('.dropdown-button').dropdown({
         inDuration: 300,
         outDuration: 225,
         constrain_width: true, // Does not change width of dropdown to that of the activator
@@ -32,12 +32,14 @@ $(document).ready(function(){
         belowOrigin: true, // Displays dropdown below the button
         alignment: 'left' // Displays dropdown with edge aligned to the left of button
     });
-    $('.button-collapse').sideNav({
+
+    $('.button-collapse').lenght && $('.button-collapse').sideNav({
         menuWidth: 240, // Default is 240
         edge: 'left', // Choose the horizontal origin
         closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
 
+    $('.parallax').length && $('.parallax').parallax();
 
 
     if ($('.github-commit').length) { // Checks if widget div exists (Index only)
@@ -45,10 +47,12 @@ $(document).ready(function(){
         url: "https://api.github.com/repos/HackSpacePeru/Community-Training/commits/gh-pages",
         dataType: "json",
         success: function (data) {
-          var sha = data.sha,
-              date = jQuery.timeago(data.commit.author.date);
-          $('.github-commit').find('.date').html(date);
-          $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
+            var sha = data.sha,
+                date = jQuery.timeago(data.commit.author.date);
+                author = data.author
+            $('.github-commit').find('.date').html(date);
+            $('.github-commit').find('.author').html("@" + author.login).attr('href', author.html_url);
+            $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
         }
       });
     }

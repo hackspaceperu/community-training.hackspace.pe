@@ -151,35 +151,34 @@
         padding: 0 15px;
       }
 
-      .ct-layout nav ul li.registration {
+      .ct-layout nav ul li.ct-registration {
         line-height: inherit;
         padding: 0 0 0 15px;
       }
 
-      .ct-layout nav ul.side-nav li.registration {
+      .ct-layout nav ul.side-nav li.ct-registration {
         padding: 10px 15px;
       }
 
-      .ct-layout nav ul li.registration:hover {
+      .ct-layout nav ul li.ct-registration:hover {
         border: 0 solid transparent!important;
         background-color: transparent;
       }
 
-      .ct-layout nav ul.side-nav li.registration a {
+      .ct-layout nav ul.side-nav li.ct-registration a {
         line-height: 44px;
         height: 44px;
       }
 
-      .ct-layout nav ul li.registration .btn {
+      .ct-layout nav ul li.ct-registration .btn {
         -webkit-transition: all .5s ease-in-out;
            -moz-transition: all .5s ease-in-out;
             -ms-transition: all .5s ease-in-out;
              -o-transition: all .5s ease-in-out;
                 transition: all .5s ease-in-out;
       }
-
-      .ct-layout nav ul li.registration .btn:hover,
-      a.registration.btn:hover {
+      .ct-layout nav ul li.ct-registration .btn:hover,
+      a.ct-registration.btn:hover {
         background-color: #ab1d31!important;
       }
 
@@ -232,4 +231,21 @@
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    .ct-layout .parallax-container {
+      height: 320px;
+    }
+
+    a.ct-repo.btn{
+      width: 100%;
+    }
+    a.ct-repo.btn *{
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+
+    a.ct-repo.btn:hover {
+      background-color: #234c69!important;
     }
