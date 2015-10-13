@@ -13,6 +13,11 @@
 /* Layout
 /* -------------------------------------------------------------------------- */
   /* General Layout */
+    html,body{
+      overflow-x: hidden;
+
+    }
+
     /* Preloader */
     body.not-loaded {
       overflow: hidden;
