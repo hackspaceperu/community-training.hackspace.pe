@@ -13,18 +13,21 @@
 /* Layout
 /* -------------------------------------------------------------------------- */
   /* General Layout */
-    html,body{
+    html,
+    body{
       overflow-x: hidden;
-
     }
 
     /* Preloader */
     body.not-loaded {
       overflow: hidden;
+      height: 100%;
+      width: 100%;
     }
 
     .ct-preloader {
-      position: absolute;
+      position: fixed;
+      overflow-x: hidden;
       top: 0;
       bottom: 0;
       left: 0;
@@ -80,12 +83,15 @@
 
     /* Header Layout - Navigation */
       .ct-layout header#header {
-        border-top: 5px solid #761422;
       }
 
-      .ct-layout nav {
+      .ct-layout .navbar-fixed nav{
+        -webkit-box-sizing: content-box;
+           -moz-box-sizing: content-box;
+                box-sizing: content-box;
+        border-top: 5px solid #761422;
         padding: 0 15px;
-        line-height: 60px;
+        line-height: 59px;
       }
 
       .ct-layout nav .brand-logo img {

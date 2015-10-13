@@ -37,6 +37,22 @@ $(document).ready(function(){
         edge: 'left', // Choose the horizontal origin
         closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
     });
+
+
+
+    if ($('.github-commit').length) { // Checks if widget div exists (Index only)
+      $.ajax({
+        url: "https://api.github.com/repos/HackSpacePeru/Community-Training/commits/gh-pages",
+        dataType: "json",
+        success: function (data) {
+          var sha = data.sha,
+              date = jQuery.timeago(data.commit.author.date);
+          $('.github-commit').find('.date').html(date);
+          $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
+        }
+      });
+    }
+
 });
 
 $(window).load(function(){
