@@ -4,7 +4,10 @@
     "title":"Taller de Introducción a Android",
     "picture":"/static/img/entrenadores/armando.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [],
+    "links": [{
+       "text":"Inscribirme - 18 Cupos",
+       "url":"inscribirme.html"
+    }],
     "community":{
         "name":"GDG Open Lima",
         "fb_url":"https://www.facebook.com/gdgopenlima",
@@ -23,7 +26,10 @@
     "title":"Taller de Electrónica con Arduino",
     "picture":"/static/img/entrenadores/eduardo.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [],
+    "links": [{
+       "text":"Inscribirme - 18 Cupos",
+       "url":"inscribirme.html"
+    }],
     "community":{
         "name":"Hack Space Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
@@ -43,6 +49,9 @@
     "picture":"/static/img/entrenadores/juan.jpg",
     "abstract":"Este taller está diseñado para aquellos interesados en desarrollar aplicaciones o sitios web móviles, tengan o no conocimientos previos de desarrollo. En una sesión presencial se presentarán conceptos alrededor de la concepción, planificación y prototipado aplicados al mundo móvil. Al finalizar, los participantes estarán en capacidad de diseñar experiencias de usuario móviles.",
     "links": [{
+       "text":"Inscribirme - 30 Cupos",
+       "url":"inscribirme.html"
+    },{
        "text":"Material Previo",
        "url":"http://www.slideshare.net/juaneladio/diseno-de-apps-y-webs-moviles-sesion-1",
        "target":"_blank"
@@ -65,7 +74,10 @@
     "title":"Taller de Introducción a Django",
     "picture":"/static/img/entrenadores/moisespython.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [],
+    "links": [{
+       "text":"Inscribirme - 18 Cupos",
+       "url":"inscribirme.html"
+    }],
     "community":{
         "name":"Python Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
@@ -84,7 +96,10 @@
     "title":"Taller de Raspberry Pi + Linux",
     "picture":"/static/img/entrenadores/eissonyluis.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [],
+    "links": [{
+       "text":"Inscribirme - 18 Cupos",
+       "url":"inscribirme.html"
+    }],
     "community":{
         "name":"CSL UNI",
         "fb_url":"https://www.facebook.com/cslibreuni",
