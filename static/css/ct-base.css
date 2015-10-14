@@ -268,3 +268,7 @@
     a.ct-repo.btn:hover {
       background-color: #234c69!important;
     }
+
+    .no-margin{
+      margin:0!important;
+    }
