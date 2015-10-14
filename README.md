@@ -27,7 +27,7 @@ del país.
     * Talleres presenciales de 2 horas por cada tema.
 
 
-## TODO:
+## TO-DO
 * ~~Elección de un nombre kawaii para el entrenamiento.~~ (El nombre no fue kawaii :worried:)
 * ~~Elección de un dominio kawaii para el entrenamiento.~~ (Salió larga la wea entrenamientodecomunidades.com :v)
 * ~~Confirmación de las comunidades participantes.~~ (4 Comunidades pe)
@@ -41,7 +41,7 @@ del país.
 * Definición del programa.
 * Algo más? Ideas por favor ...
 
-## Legal:
+## Legal
 
 Todo el contenido de este repositorio está licenciado bajo la "Apache License",
 versión 2.0 ("la licencia"); cualquier uso realizado del contenido de este
