@@ -70,7 +70,7 @@
               <img src="/static/img/text_logo.png" alt="">
             </a>
 
-            <a href="#" data-activates="ct-mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="" data-activates="ct-mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <ul class="right hide-on-med-and-down">
               <li>
@@ -85,14 +85,14 @@
               </li>
 
               <li class="ct-registration">
-                <a href="/inscripciones" class="btn ct-red hoverable">Inscripciones</a>
+                <a href="/inscripciones" class="btn ct-red waves-effect waves-light hoverable">Inscripciones</a>
               </li>
             </ul>
 
             <ul class="side-nav" id="ct-mobile-nav">
               <li class="ct-logo"><a href="/"></a></li>
               <li class="ct-registration">
-                <a href="/inscripciones" class="btn ct-red white-text hoverable">Inscripciones</a>
+                <a href="/inscripciones" class="btn ct-red white-text waves-effect waves-light hoverable">Inscripciones</a>
               </li>
               <li class="divider"></li>
               <li class="item-title"><span class="ct-red-text">Talleres<i class="material-icons icon-size-36 right">arrow_drop_down</i></span></li>
@@ -127,13 +127,61 @@
             <div class="container">
               <div class="row">
                 <div class="col s8 offset-s2 m4 offset-m4 l4 offset-l4 center-align">
-                  <a href="/inscripciones" class="btn btn-large ct-red ct-registration">
+                  <a href="/inscripciones" class="btn btn-large ct-red ct-registration waves-effect waves-light">
                     Inscríbete
                   </a>
                 </div>
               </div>
             </div>
+          </section>
+          <section>
+            <div class="row ct-blue">
+              <div class="row"></div>
+              <div class="container">
+                <div class="col s12">
+                  <h2 class="center-align light ct-red-text-light">
+                    Ven y disfruta de los cinco talleres que tenemos para ti.
+                  </h2>
+                </div>
+              </div>
+              <div class="row"></div>
+            </div>
+            <div class="row"></div>
+            <!-- Card Structure for course presentation -->
+            <div class="ct-workshop-showcase">
+              <!-- div class="row">
+                  <div class="container">
+                    <div class="card hoverable waves-effect waves-block">
+                      <div class="col s12 m4 no-padding card-image">
+                      </div>
+                      <div class="col s12 m8 no-padding">
+                        <div class="card-content">
+                          <span class="card-title ct-blue-text"></span>
+                          <span><strong></strong></span>
+                          <p>
+                          </p>
+                        </div>
+                        <div class="card-action">
+                          <a href=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div -->
+            </div>
             <div class="container">
+              <div class="row">
+                <div class="col s12">
+                  <h2 class="center-align thin ct-red-text-light">
+                    ¡Te esperamos!
+                  </h2>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="row"></div>
+            </div>
+            <div class="container">
+              <div class="row"></div>
               <div class="row center-align">
                 <div class="col s8 offset-s2 m4 offset-m2 l4">
                   <div class="ct-community-card card hoverable waves-effect waves-block">
@@ -168,44 +216,6 @@
               </div>
             </div>
           </section>
-          <section>
-            <div class="row ct-blue">
-              <div class="row"></div>
-              <div class="container">
-                <div class="col s12">
-                  <h2 class="center-align light ct-red-text-light"> Ven y disfruta de los cinco talleres que tenemos para ti.</h2>
-                </div>
-              </div>
-              <div class="row"></div>
-            </div>
-            <div class="row"></div>
-            <div class="row">
-              <!-- Card Structure for course presentation -->
-                <div class="container">
-                  <div class="card hoverable waves-effect">
-                    <div class="col s4 no-padding card-image">
-                      <p class="shades-text text-transparent">.</p>
-                    </div>
-                    <div class="col s8 no-padding">
-                      <div class="card-content">
-                        <span class="card-title ct-blue-text">Card Title</span>
-                        <p>
-                        I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                        I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                        I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.
-                        </p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </section>
         </div>
       </main>
       <footer class="ct-red page-footer">
@@ -222,7 +232,7 @@
                 Latest Commit on Github <span class="date">
                 </span> by <a href="" class="grey-text text-lighten-4 author" attr="_blank"></a>. Go to <a href="" class="grey-text text-lighten-4 sha" attr="_blank"></a> for more details.
               </p>
-              <a class="grey-text text-lighten-4 ct-repo btn btn-large ct-blue hoverable" href="https://github.com/HackSpacePeru/Community-Training">
+              <a class="grey-text text-lighten-4 ct-repo btn btn-large ct-blue hoverable" href="https://github.com/HackSpacePeru/Community-Training" target="_blank">
                 <i class="fa fa-fw fa-github"></i>
                 <span>@HackSpacePeru/Community-Training</span>
               </a>
@@ -251,15 +261,13 @@
     <script type="text/javascript" charset="utf-8" src="static/js/jquery.timeago.js"></script>
     <script type="text/javascript" charset="utf-8" src="static/js/materialize.js"></script>
     <script type="text/javascript" charset="utf-8" src="static/js/ct-base.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68832519-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-68832519-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

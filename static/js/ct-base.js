@@ -1,7 +1,7 @@
 var loadingInterval;
 var d   = document;
 var b   = document.body;
-var wl   = document.querySelectorAll('[href=".*"]');
+var wl  = document.querySelectorAll('a');
 var bc  = b.classList;
 var bw  = b.offsetWidth;
 var obw = bw;
@@ -16,13 +16,6 @@ $(document).ready(function(){
         obw = bw;
         bw  = b.offsetWidth;
     }, 100);
-
-    Array.prototype.forEach.call(wl, function(wl) {
-        wl.addEventListener("click", function(wl) {
-            wl.preventDefault();
-            console.log('ss');
-        })
-    })
 
     $('.dropdown-button').dropdown({
         inDuration: 300,
@@ -42,22 +35,83 @@ $(document).ready(function(){
 
     $('.parallax').length && $('.parallax').parallax();
 
-
-    if ($('.github-commit').length) { // Checks if widget div exists (Index only)
-      $.ajax({
-        url: "https://api.github.com/repos/HackSpacePeru/Community-Training/commits/gh-pages",
+    $.ajax({
+        url: "static/data/abstracts.json",
+        method: "GET",
         dataType: "json",
         success: function (data) {
-            var sha = data.sha,
-                date = jQuery.timeago(data.commit.author.date);
-                author = data.author
-            $('.github-commit').find('.date').html(date);
-            $('.github-commit').find('.author').html("@" + author.login).attr('href', author.html_url);
-            $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
-        }
-      });
+            for(var c=0; c < data.length; c++){
+                var workshop = data[c];
+                var html = '<div class="row ct-workshop" id=' + workshop.id + '>' +
+                           '<div class="container">' +
+                           '<div class="card hoverable waves-effect waves-block">' +
+                           '<div class="col s12 m5 l4 no-padding card-image">' +
+                           '</div><div class="content col s12 m7 l8 no-padding">' +
+                           '<div class="card-content">' +
+                           '<span class="card-title title ct-blue-text"></span>' +
+                           '<p><strong class="speaker"></strong></p>' +
+                           '<p class="community light"></p><br>' +
+                           '<p class="abstract">' +
+                           '</p></div>' +
+                           '<div class="card-action actions">' +
+                           '<a href=""></a>' +
+                           '</div></div></div></div></div>';
+                var workshopCard = $(html);
+                $('.ct-workshop-showcase').append(workshopCard);
+                workshopCard = $('#' + workshop.id);
+                workshopCard.find(".title").html(workshop.title);
+                workshopCard.find(".abstract").html(workshop.abstract);
+                workshopCard.find(".community").html(workshop.community.name);
+                workshopCard.find(".speaker").html(workshop.speaker.name);
+                for(var l=0; l<workshop.links.length; l++){
+                    var link = workshop.links[l];
+                    html = $('<a href="' + link.url + '">' + link.text + '</a>');
+                    workshopCard.find(".actions").append(html);
+                }
+                workshopCard.find(".card-image").height(workshopCard.find(".content").height());
+                workshopCard.find(".card-image").css('background-image', 'url(' + workshop.picture + ')');
+                console.log(workshop.picture);
+
+            }
+        },
+    });
+
+    if ($('.github-commit').length) { // Checks if widget div exists (Index only)
+        $.ajax({
+            url: "https://api.github.com/repos/HackSpacePeru/Community-Training/commits/gh-pages",
+            dataType: "json",
+            success: function (data) {
+                var sha = data.sha,
+                    date = jQuery.timeago(data.commit.author.date);
+                    author = data.author
+                $('.github-commit').find('.date').html(date);
+                $('.github-commit').find('.author').html("@" + author.login).attr('href', author.html_url);
+                $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
+            }
+        });
     }
 
+    Array.prototype.forEach.call(wl, function(l) {
+        l.addEventListener("click", function(e) {
+            e.preventDefault();
+            url = l.getAttribute('href');
+            if(url != ""){
+                target = l.getAttribute('target')===null?'_self':l.getAttribute('target');
+                setTimeout(function(){
+                    window.open(url,target);
+                }, 500);
+            }
+        })
+    })
+
+});
+
+$(window).resize(function(event) {
+    var wlst = $(".ct-workshop");
+    for(var w=0; w<wlst.length; w++){
+        var workshopCard = $(wlst[w]);
+        workshopCard.find(".card-image").height(workshopCard.find(".content").height());
+    }
 });
 
 $(window).load(function(){

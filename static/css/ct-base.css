@@ -20,13 +20,12 @@
     html,
     body{
       overflow-x: hidden;
+      width: 100%;
     }
 
     /* Preloader */
-    body.not-loaded {
-      overflow: hidden;
-      height: 100%;
-      width: 100%;
+    body.not-loaded *{
+      overflow: hidden!important;
     }
 
     .ct-preloader {
@@ -102,12 +101,12 @@
         vertical-align: middle;
       }
 
-      .ct-layout nav ul:not(.side-nav) li{
+      .ct-layout nav ul:not(.side-nav) li:not(.ct-registration){
         height: 51px;
       }
 
       @media only screen and (min-width: 601px){
-        .ct-layout nav ul:not(.side-nav) li{
+        .ct-layout nav ul:not(.side-nav) li:not(.ct-registration){
           height: 59px;
         }
       }
@@ -243,7 +242,21 @@
       background-repeat: no-repeat;
     }
 
+    .ct-workshop-showcase .card .card-image {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media only screen and (max-width: 600px){
+      .ct-workshop-showcase .card .card-image {
+        max-height: 200px;
+      }
+    }
+
     a.ct-repo.btn{
+      height: 54px;
+      line-height: 52px;
       width: 100%;
     }
     a.ct-repo.btn *{
