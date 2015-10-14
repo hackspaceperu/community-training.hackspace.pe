@@ -20,10 +20,11 @@ $(document).ready(function(){
     Array.prototype.forEach.call(wl, function(wl) {
         wl.addEventListener("click", function(wl) {
             wl.preventDefault();
+            console.log('ss');
         })
     })
 
-    $('nav .dropdown-button').lenght && $('.dropdown-button').dropdown({
+    $('.dropdown-button').dropdown({
         inDuration: 300,
         outDuration: 225,
         constrain_width: true, // Does not change width of dropdown to that of the activator
@@ -33,7 +34,7 @@ $(document).ready(function(){
         alignment: 'left' // Displays dropdown with edge aligned to the left of button
     });
 
-    $('.button-collapse').lenght && $('.button-collapse').sideNav({
+    $('.button-collapse').sideNav({
         menuWidth: 240, // Default is 240
         edge: 'left', // Choose the horizontal origin
         closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor

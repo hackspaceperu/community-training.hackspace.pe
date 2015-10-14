@@ -1,13 +1,17 @@
 /* -------------------------------------------------------------------------- */
 /* Color
 /* -------------------------------------------------------------------------- */
-  .ct-red         { background-color: #761422!important; }
-  .ct-red-text    {            color: #761422!important; }
-  .ct-red-border  {     border-color: #761422!important; }
+  .ct-red             { background-color: #761422!important; }
+  .ct-red-light       { background-color: #ab1d31!important; }
+  .ct-red-text        {            color: #761422!important; }
+  .ct-red-text-light  {            color: #ab1d31!important; }
+  .ct-red-border      {     border-color: #761422!important; }
 
-  .ct-blue        { background-color: #0D1C27!important; }
-  .ct-blue-text   {            color: #0D1C27!important; }
-  .ct-blue-border {     border-color: #0D1C27!important; }
+  .ct-blue            { background-color: #0D1C27!important; }
+  .ct-blue-light      { background-color: #234c69!important; }
+  .ct-blue-text       {            color: #0D1C27!important; }
+  .ct-blue-text-light {            color: #234c69!important; }
+  .ct-blue-border     {     border-color: #0D1C27!important; }
 
 /* -------------------------------------------------------------------------- */
 /* Layout
@@ -98,17 +102,19 @@
         vertical-align: middle;
       }
 
+      .ct-layout nav ul:not(.side-nav) li{
+        height: 51px;
+      }
+
+      @media only screen and (min-width: 601px){
+        .ct-layout nav ul:not(.side-nav) li{
+          height: 59px;
+        }
+      }
+
       .ct-layout nav ul:not(.side-nav) li:hover,
       .ct-layout nav ul:not(.side-nav) li.active {
         border-bottom: 5px solid #761422;
-      }
-
-      .ct-layout header#header .dropdown-content {
-        -webkit-transform: translateY(5px);
-           -moz-transform: translateY(5px);
-            -ms-transform: translateY(5px);
-             -o-transform: translateY(5px);
-                transform: translateY(5px);
       }
 
       .ct-layout header#header .dropdown-content li:hover {
@@ -174,6 +180,7 @@
              -o-transition: all .5s ease-in-out;
                 transition: all .5s ease-in-out;
       }
+
       .ct-layout nav ul li.ct-registration .btn:hover,
       a.ct-registration.btn:hover {
         background-color: #ab1d31!important;
@@ -188,6 +195,11 @@
     body.ct-home .ct-layout .ct-sections {
       margin: 0;
       padding: 0;
+    }
+
+    body.ct-home .ct-layout .ct-sections section:not(:last-of-type) {
+      margin: 0;
+      padding: 0 0 20px 0;
     }
 
     body.ct-home .ct-layout .ct-sections #ct-welcome {
@@ -224,14 +236,11 @@
     .card.ct-community-card .card-image{
       margin: 10px;
       height: 80px;
+      display: block;
       background-color: #FFFFFF;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-    }
-
-    .ct-layout .parallax-container {
-      height: 320px;
     }
 
     a.ct-repo.btn{
