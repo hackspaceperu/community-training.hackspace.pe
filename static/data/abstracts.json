@@ -41,8 +41,12 @@
     "name":"Frontend",
     "title":"Taller de Diseño de apps y web móviles",
     "picture":"/static/img/main_parallax.jpg",
-    "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [],
+    "abstract":"Este taller está diseñado para aquellos interesados en desarrollar aplicaciones o sitios web móviles, tengan o no conocimientos previos de desarrollo. En una sesión presencial se presentarán conceptos alrededor de la concepción, planificación y prototipado aplicados al mundo móvil. Al finalizar, los participantes estarán en capacidad de diseñar experiencias de usuario móviles.",
+    "links": [{
+       "text":"Material Previo",
+       "url":"http://www.slideshare.net/juaneladio/diseno-de-apps-y-webs-moviles-sesion-1",
+       "target":"_blank"
+    }],
     "community":{
         "name":"Mozilla Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
