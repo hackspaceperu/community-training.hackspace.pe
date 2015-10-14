@@ -1,4 +1,4 @@
-# [![Entrenamiento de comunidades](./static/img/logo_tiny.png)](./static/img/logo_large.png) Entrenamiento de comunidades
+# [![Entrenamiento de comunidades](./static/img/flame_64.png)](./static/img/flame_64.png) Entrenamiento de comunidades
 
 [![Join the chat at https://gitter.im/HackSpacePeru/Community-Training](./static/img/gitter_badge.png)](https://gitter.im/HackSpacePeru/Community-Training?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

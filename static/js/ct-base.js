@@ -43,7 +43,6 @@ $(document).ready(function(){
             for(var c=0; c < data.length; c++){
                 var workshop = data[c];
                 var html = '<div class="row ct-workshop" id=' + workshop.id + '>' +
-                           '<div class="container">' +
                            '<div class="card hoverable waves-effect waves-block">' +
                            '<div class="col s12 m5 l4 no-padding card-image">' +
                            '</div><div class="content col s12 m7 l8 no-padding">' +
@@ -55,9 +54,9 @@ $(document).ready(function(){
                            '</p></div>' +
                            '<div class="card-action actions">' +
                            '<a href=""></a>' +
-                           '</div></div></div></div></div>';
+                           '</div></div></div></div>';
                 var workshopCard = $(html);
-                $('.ct-workshop-showcase').append(workshopCard);
+                $('.ct-workshop-showcase .container').append(workshopCard);
                 workshopCard = $('#' + workshop.id);
                 workshopCard.find(".title").html(workshop.title);
                 workshopCard.find(".abstract").html(workshop.abstract);
