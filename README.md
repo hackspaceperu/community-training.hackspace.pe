@@ -52,7 +52,7 @@ la licencia. Puedes obtener una copia de la licencia en
 
 A menos que la ley aplicable lo requiera o se llegue a un acuerdo por escrito,
 el contenido distribuido bajo las condiciones indicadas por la licencia es
-distribuido "TAL COMO ESTÄ", SIN GARANTIAS O CONDICIONES DE NINGUN TIPO, sean
+distribuido "TAL COMO ESTÁ", SIN GARANTIAS O CONDICIONES DE NINGUN TIPO, sean
 implícitas o expresas.
 
 Lea la licencia en su respectivo idioma para conocer los permisos y
