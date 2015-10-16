@@ -3,7 +3,7 @@
     "name":"Android",
     "title":"Taller de Introducción a Android",
     "picture":"/static/img/entrenadores/armando.jpg",
-    "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
+    "abstract":"Este curso está diseñado para quienes son nuevos en programación y desean aprender a construir aplicaciones Android. No necesitas tener experiencia en programación para tomar este curso. Si ya has venido usando un smartphone para navegar por la web y chatear con tus amigos, entonces el curso es ideal para ti. ¡Aprenderás conceptos básicos del desarrollo en Android y programación en Java, los cuales constituirán en tus primeros pasos en tu viaje para convertirte en un Desarrollador Android!",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
        "url":"inscribirme.html"
@@ -25,7 +25,7 @@
     "name":"Arduino",
     "title":"Taller de Electrónica con Arduino",
     "picture":"/static/img/entrenadores/eduardo.jpg",
-    "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
+    "abstract":"Arduino es una plataforma de electrónica abierta (open Hardware) para la creación de prototipos basada en software y hardware flexibles y fáciles de usar. En este taller aprenderás lo básico necesario para empezar a hacer proyectos con un Arduino.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
        "url":"inscribirme.html"
@@ -73,7 +73,7 @@
     "name":"Python",
     "title":"Taller de Introducción a Django",
     "picture":"/static/img/entrenadores/moisespython.jpg",
-    "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
+    "abstract":"Django es un framework de desarrollo Web hecho en Python que ahorra tiempo y hace que el desarrollo Web sea divertido. Utilizando Django puedes crear y mantener aplicaciones Web de alta calidad con un mínimo esfuerzo. En este taller aprenderás a trabajar con él y a hacer tus primeras aplicaciones en Django.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
        "url":"inscribirme.html"
@@ -95,7 +95,7 @@
     "name":"Raspberry Pi",
     "title":"Taller de Raspberry Pi + Linux",
     "picture":"/static/img/entrenadores/eissonyluis.jpg",
-    "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
+    "abstract":"Raspberry Pi es una computadora extremadamente sencilla que puedes obtener por muy poco dinero. En este taller, no solo aprenderás a trabajar con ella, sino que también podrás ingresar en el mundo del software libre con Raspberry Pi y Linux. Y aprenderás a desarrollar proyectos paralelamente con módulos electrónicos y servidores.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
        "url":"inscribirme.html"
