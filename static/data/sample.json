@@ -1,18 +1,10 @@
 [{
     "id":"Android",
     "name":"Android",
-    "title":"Taller de Android",
+    "title":"Taller de Introducción a Android",
     "picture":"/static/img/main_parallax.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [{
-        "text":"text1",
-        "url":"URL",
-        "target":"_self"
-    },{
-        "text":"text2",
-        "url":"URL",
-        "target":"_blank"
-    }],
+    "links": [],
     "community":{
         "name":"GDG Open Lima",
         "fb_url":"https://www.facebook.com/gdgopenlima",
@@ -20,7 +12,7 @@
         "web_url":"http://gdgopenlima-python.appspot.com/"
     },
     "speaker":{
-        "name":"Jhon Doe",
+        "name":"Armando Picón",
         "fb_url":"http://www.facebook.com",
         "gh_url":"http://www.github.com",
         "web_url":"http://www.google.com"
@@ -28,14 +20,10 @@
 },{
     "id":"Arduino",
     "name":"Arduino",
-    "title":"Taller de Arduino",
+    "title":"Taller de Electrónica con Arduino",
     "picture":"/static/img/main_parallax.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [{
-        "text":"Title",
-        "url":"URL",
-        "target":"_self"
-    }],
+    "links": [],
     "community":{
         "name":"Hack Space Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
@@ -43,7 +31,7 @@
         "web_url":"http://hackspace.pe"
     },
     "speaker":{
-        "name":"Jhon Doe",
+        "name":"Eduardo Yallico",
         "fb_url":"http://www.facebook.com",
         "gh_url":"http://www.github.com",
         "web_url":"http://www.google.com"
@@ -51,14 +39,10 @@
 },{
     "id":"Frontend",
     "name":"Frontend",
-    "title":"Taller de Frontend",
+    "title":"Taller de Diseño de apps y web móviles",
     "picture":"/static/img/main_parallax.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [{
-        "text":"Title",
-        "url":"URL",
-        "target":"_self"
-    }],
+    "links": [],
     "community":{
         "name":"Mozilla Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
@@ -66,7 +50,7 @@
         "web_url":"http://hackspace.pe"
     },
     "speaker":{
-        "name":"Jhon Doe",
+        "name":"Juan Sánchez",
         "fb_url":"http://www.facebook.com",
         "gh_url":"http://www.github.com",
         "web_url":"http://www.google.com"
@@ -74,14 +58,10 @@
 },{
     "id":"Python",
     "name":"Python",
-    "title":"Taller de Python",
+    "title":"Taller de Introducción a Django",
     "picture":"/static/img/main_parallax.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [{
-        "text":"Title",
-        "url":"URL",
-        "target":"_self"
-    }],
+    "links": [],
     "community":{
         "name":"Python Perú",
         "fb_url":"https://www.facebook.com/HackSpacePeru",
@@ -89,7 +69,7 @@
         "web_url":"http://hackspace.pe"
     },
     "speaker":{
-        "name":"Jhon Doe",
+        "name":"Moisés Cachay",
         "fb_url":"http://www.facebook.com",
         "gh_url":"http://www.github.com",
         "web_url":"http://www.google.com"
@@ -97,22 +77,18 @@
 },{
     "id":"RaspberryPi",
     "name":"Raspberry Pi",
-    "title":"Taller de Raspberry Pi",
+    "title":"Taller de Raspberry Pi + Linux",
     "picture":"/static/img/main_parallax.jpg",
     "abstract":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis commodo faucibus. Sed elementum augue ex, at pulvinar nulla fringilla et. Integer consectetur nisl quis orci finibus, in dignissim ex aliquet. Integer tincidunt egestas sem, blandit tempor risus fermentum vel. Duis condimentum orci at mauris bibendum, nec cursus sem scelerisque. Etiam maximus posuere nibh nec aliquam. Curabitur sed odio nisl. Sed vitae fermentum elit. Nulla placerat purus mollis egestas venenatis. Etiam sapien neque, fringilla quis dui eu, pulvinar tempus justo.",
-    "links": [{
-        "text":"Title",
-        "url":"URL",
-        "target":"_self"
-    }],
+    "links": [],
     "community":{
         "name":"CSL UNI",
-        "fb_url":"https://www.facebook.com/HackSpacePeru",
-        "gh_url":"https://github.com/HackSpacePeru",
-        "web_url":"http://hackspace.pe"
+        "fb_url":"https://www.facebook.com/cslibreuni",
+        "gh_url":"https://github.com/cslibreuni?",
+        "web_url":"http://csluni.org"
     },
     "speaker":{
-        "name":"Jhon Doe",
+        "name":"Luis Linares, Eisson Alipio",
         "fb_url":"http://www.facebook.com",
         "gh_url":"http://www.github.com",
         "web_url":"http://www.google.com"
