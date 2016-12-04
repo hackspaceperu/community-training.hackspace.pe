@@ -2,7 +2,7 @@
     "id":"Android",
     "name":"Android",
     "title":"Taller de Introducción a Android",
-    "picture":"/static/img/entrenadores/armando.jpg",
+    "picture":"static/img/entrenadores/armando.jpg",
     "abstract":"Este curso está diseñado para quienes son nuevos en programación y desean aprender a construir aplicaciones Android. No necesitas tener experiencia en programación para tomar este curso. Si ya has venido usando un smartphone para navegar por la web y chatear con tus amigos, entonces el curso es ideal para ti. ¡Aprenderás conceptos básicos del desarrollo en Android y programación en Java, los cuales constituirán en tus primeros pasos en tu viaje para convertirte en un Desarrollador Android!",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
@@ -24,7 +24,7 @@
     "id":"Arduino",
     "name":"Arduino",
     "title":"Taller de Electrónica con Arduino",
-    "picture":"/static/img/entrenadores/eduardo.jpg",
+    "picture":"static/img/entrenadores/eduardo.jpg",
     "abstract":"Arduino es una plataforma de electrónica abierta (open Hardware) para la creación de prototipos basada en software y hardware flexibles y fáciles de usar. En este taller aprenderás lo básico necesario para empezar a hacer proyectos con un Arduino.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
@@ -46,7 +46,7 @@
     "id":"Frontend",
     "name":"Frontend",
     "title":"Taller de Diseño de apps y web móviles",
-    "picture":"/static/img/entrenadores/juan.jpg",
+    "picture":"static/img/entrenadores/juan.jpg",
     "abstract":"Este taller está diseñado para aquellos interesados en desarrollar aplicaciones o sitios web móviles, tengan o no conocimientos previos de desarrollo. En una sesión presencial se presentarán conceptos alrededor de la concepción, planificación y prototipado aplicados al mundo móvil. Al finalizar, los participantes estarán en capacidad de diseñar experiencias de usuario móviles.",
     "links": [{
        "text":"Inscribirme - 30 Cupos",
@@ -72,7 +72,7 @@
     "id":"Python",
     "name":"Python",
     "title":"Taller de Introducción a Django",
-    "picture":"/static/img/entrenadores/moisespython.jpg",
+    "picture":"static/img/entrenadores/moisespython.jpg",
     "abstract":"Django es un framework de desarrollo Web hecho en Python que ahorra tiempo y hace que el desarrollo Web sea divertido. Utilizando Django puedes crear y mantener aplicaciones Web de alta calidad con un mínimo esfuerzo. En este taller aprenderás a trabajar con él y a hacer tus primeras aplicaciones en Django.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
@@ -94,7 +94,7 @@
     "id":"RaspberryPi",
     "name":"Raspberry Pi",
     "title":"Taller de Raspberry Pi + Linux",
-    "picture":"/static/img/entrenadores/eissonyluis.jpg",
+    "picture":"static/img/entrenadores/eissonyluis.jpg",
     "abstract":"Raspberry Pi es una computadora extremadamente sencilla que puedes obtener por muy poco dinero. En este taller, no solo aprenderás a trabajar con ella, sino que también podrás ingresar en el mundo del software libre con Raspberry Pi y Linux. Y aprenderás a desarrollar proyectos paralelamente con módulos electrónicos y servidores.",
     "links": [{
        "text":"Inscribirme - 18 Cupos",
